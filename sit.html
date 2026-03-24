@@ -1,1 +1,465 @@
+<!DOCTYPE html>
 
+<html lang="ru" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ТАТАРЛАР АЛГА — Протокол Перерождения</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400…" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --emerald: #002b24;
+
+            --gold: #FFD700;
+
+        }
+
+        body { 
+
+            background-color: var(--emerald); 
+
+            color: white; 
+
+            font-family: 'Montserrat', sans-serif; 
+
+            letter-spacing: -0.05em; 
+
+            overflow-x: hidden; 
+
+        }
+
+        .giant-text { font-weight: 900; text-transform: uppercase; line-height: 0.85; }
+
+        .gold-text { color: var(--gold); }
+
+        .glass { 
+
+            background: rgba(255, 255, 255, 0.03); 
+
+            backdrop-filter: blur(12px); 
+
+            border: 1px solid rgba(255, 215, 0, 0.15); 
+
+            border-radius: 40px; 
+
+            transition: all 0.4s ease;
+
+        }
+
+        .glass:hover { border-color: var(--gold); background: rgba(255, 255, 255, 0.06); }
+
+        
+
+        /* Вертикальный элемент как в референсе */
+
+        .vertical-badge { 
+
+            writing-mode: vertical-rl; 
+
+            text-transform: uppercase; 
+
+            letter-spacing: 0.25em; 
+
+            font-size: 0.7rem; 
+
+            color: var(--gold); 
+
+            border: 1px solid rgba(255, 215, 0, 0.3); 
+
+            padding: 30px 12px; 
+
+            border-radius: 50px; 
+
+            font-weight: 900;
+
+        }
+
+
+
+        /* Анимация левитации для объектов */
+
+        @keyframes float { 
+
+            0%, 100% { transform: translateY(0) rotate(0); } 
+
+            50% { transform: translateY(-30px) rotate(10deg); } 
+
+        }
+
+        .floating { animation: float 6s ease-in-out infinite; pointer-events: none; position: absolute; filter: drop-shadow(0 0 15px rgba(255,215,0,0.2)); }
+
+        
+
+        .btn-alga { 
+
+            background: var(--gold); 
+
+            color: var(--emerald); 
+
+            font-weight: 900; 
+
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+
+            cursor: pointer; 
+
+            text-transform: uppercase; 
+
+        }
+
+        .btn-alga:hover { transform: scale(1.1) rotate(-1deg); box-shadow: 0 0 40px var(--gold); }
+
+        
+
+        .section-line { border-top: 1px solid rgba(255, 215, 0, 0.1); width: 100%; margin: 80px 0; }
+
+    </style>
+
+</head>
+
+<body class="antialiased">
+
+
+
+    <div class="fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
+
+        <div class="vertical-badge">ӘКЕРЕН ГЕНӘ</div>
+
+    </div>
+
+
+
+    <header class="min-h-screen flex flex-col items-center justify-center relative px-6 text-center overflow-hidden">
+
+        <div class="floating text-9xl" style="top:10%; left:5%;">🥟</div>
+
+        <div class="floating text-7xl" style="top:25%; right:10%; animation-delay: 1.5s;">🍯</div>
+
+        <div class="floating text-8xl" style="bottom:20%; left:15%; animation-delay: 3s;">💠</div>
+
+        <div class="floating text-6xl" style="bottom:10%; right:20%; animation-delay: 0.5s;">🐎</div>
+
+        
+
+        <h1 class="giant-text text-[75px] md:text-[180px] tracking-tighter animate-pulse">
+
+            ТАТАРЛАР<br><span class="gold-text">АЛГА</span>
+
+        </h1>
+
+        <p class="max-w-3xl text-sm md:text-xl font-bold uppercase tracking-[0.3em] mt-8 mb-16 opacity-70">
+
+            ПЕРВЫЙ В МИРЕ КУРС ПО ТУВАНТОМУ ПЕРЕРОЖДЕНИЮ В ТАТАРИНА ЗА 7 ДНЕЙ
+
+        </p>
+
+        <a href="#pricing" class="btn-alga px-16 py-6 rounded-full text-2xl no-underline inline-block">ӘЙДА ПОГНАЛИ!</a>
+
+    </header>
+
+
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+
+        <div class="section-line"></div>
+
+        <h2 class="giant-text text-4xl md:text-6xl mb-16 italic italic tracking-tighter">Скучно жить «обычным»?</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="glass p-10 flex flex-col gap-4">
+
+                <span class="text-6xl">🍵</span>
+
+<p class="text-xl">Совсем не пьешь чай и видишь дно чашки? <br><span class="gold-text font-black uppercase text-sm mt-2 block tracking-widest">(Это грех)</span></p>
+
+            </div>
+
+            <div class="glass p-10 flex flex-col gap-4">
+
+                <span class="text-6xl">🚪</span>
+
+                <p class="text-xl">Гости уходят от тебя через 15 минут? <br><span class="gold-text font-black uppercase text-sm mt-2 block tracking-widest">(Позор)</span></p>
+
+            </div>
+
+            <div class="glass p-10 flex flex-col gap-4">
+
+                <span class="text-6xl">👴</span>
+
+                <p class="text-xl">У тебя в роду не было ни одного Бабая? <br><span class="gold-text font-black uppercase text-sm mt-2 block tracking-widest">(Мы это исправим)</span></p>
+
+            </div>
+
+            <div class="glass p-10 flex flex-col gap-4">
+
+                <span class="text-6xl">👂</span>
+
+                <p class="text-xl italic opacity-80">Ты до сих пор не знаешь, что «ӘКЕРЕН ГЕНӘ» — это универсальный ответ на любой вопрос?</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="py-32 px-6 bg-black/20">
+
+        <h2 class="text-center giant-text text-6xl md:text-[120px] mb-24 opacity-20">7 DAYS</h2>
+
+        <div class="max-w-5xl mx-auto space-y-6">
+
+            <div class="glass p-10 flex justify-between items-center group hover:bg-white/10">
+
+                <h3 class="text-xl md:text-3xl font-black uppercase italic">Модуль первый: Языковая прошивка. Изучаем Ө звук</h3>
+
+                <span class="text-4xl gold-text font-black opacity-30 group-hover:opacity-100 transition">01</span>
+
+            </div>
+
+            <div class="glass p-10 flex justify-between items-center group border-l-8 border-yellow-500">
+
+                <h3 class="text-xl md:text-3xl font-black uppercase">Уңган малай: Как работать 2 часа в день</h3>
+
+                <span class="text-4xl gold-text font-black opacity-30 group-hover:opacity-100 transition">02</span>
+
+            </div>
+
+            <div class="glass p-10 flex justify-between items-center group">
+
+                <h3 class="text-xl md:text-3xl font-black uppercase italic">Тактическая гостеприимность: Дверь на ключ</h3>
+
+                <span class="text-4xl gold-text font-black opacity-30 group-hover:opacity-100 transition">03</span>
+
+            </div>
+
+            <div class="glass p-10 flex flex-col gap-4 border-r-8 border-yellow-500 text-right">
+
+                <h3 class="text-xl md:text-3xl font-black uppercase">Спецкурс «Туганнар» и гидродинамика эчпочмаков</h3>
+
+                <span class="text-4xl gold-text font-black opacity-30">04</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="py-32 px-6 max-w-7xl mx-auto">
+
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+
+            <h2 class="giant-text text-6xl md:text-8xl italic uppercase">Experts</h2>
+
+            <p class="max-w-xs opacity-50 uppercase text-xs font-bold tracking-widest">Лучшие татарские умы современности</p>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+
+            <div class="group">
+
+                <div class="w-full aspect-square glass flex items-center justify-center text-8xl mb-8 group-hover:scale-105 transition">🎧</div>
+
+                <h4 class="text-2xl font-black gold-text uppercase">ДИДЖЕЙ СУЛЕЙМАН</h4>
+
+                <p class="text-xs opacity-40 mt-2 tracking-widest italic">Vibe Manager</p>
+
+            </div>
+
+            <div class="group">
+
+                <div class="w-full aspect-square glass flex items-center justify-center text-8xl mb-8 group-hover:scale-105 transition">🍯</div>
+
+                <h4 class="text-2xl font-black uppercase">Мастер Чак-Чак</h4>
+
+                <p class="text-xs opacity-40 mt-2 tracking-widest italic">Stickiness Expert</p>
+
+            </div>
+
+            <div class="group relative">
+
+                <div class="w-full aspect-square glass flex items-center justify-center text-8xl mb-8 opacity-10 group-hover:opacity-30 transition">👤</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+                    <span class="text-sm font-black uppercase tracking-[0.5em] bg-yellow-500 text-emerald p-2">Secret Guest</span>
+
+                </div>
+
+                <h4 class="text-2xl font-black uppercase">Силуэт в тюбетейке</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="py-32 px-6 bg-white text-emerald">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="giant-text text-5xl md:text-8xl mb-20">Feedback</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 font-bold">
+
+                <div class="space-y-6">
+
+                    <p class="text-3xl md:text-5xl tracking-tighter">«Раньше я просто ел бургеры. Теперь я кладу в них конину и называю это "Кыстыбургер"».</p>
+
+                    <div class="text-sm uppercase tracking-widest opacity-50">— Джон, Нью-Йорк</div>
+
+                </div>
+
+                <div class="space-y-6 border-l-4 border-emerald pl-10">
+
+                    <p class="text-3xl md:text-5xl tracking-tighter">«Мы строим ракеты, чтобы отвезти эчпочмаки на Марс. Без этого курса я бы не решился».</p>
+
+                    <div class="text-sm uppercase tracking-widest opacity-50">— Илон Маск (Deepfake)</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="pricing" class="py-32 px-6 max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="glass p-12 flex flex-col justify-between min-h-[550px]">
+
+                <h4 class="text-2xl font-black uppercase italic">Сабантуй</h4>
+
+                <p class="opacity-50 text-sm italic">Просто смотришь, как другие едят.</p>
+
+                <div class="text-5xl font-black gold-text my-8">5 000 ₽</div>
+
+                <button class="btn-alga py-5 rounded-full text-sm" onclick="alert('Эй, алтыным! Тут всё занято')">Выбрать</button>
+
+            </div>
+
+            <div class="glass p-12 border-[6px] border-yellow-500 flex flex-col justify-between min-h-[600px] relative md:-translate-y-10 shadow-2xl">
+
+                <div class="absolute top-0 right-10 bg-yellow-500 text-emerald px-6 py-2 font-black uppercase text-xs">эби одобрит</div>
+
+                <h4 class="text-3xl font-black uppercase">СТАНДАРТ</h4>
+
+                <p class="text-sm leading-relaxed">Доступ к чату с татарами, рецепт бабушкиного теста на блокчейне. Проверка домашки от кураторов.</p>
+
+                <div class="text-6xl font-black gold-text my-8">15 000 ₽</div>
+
+                <button class="btn-alga py-6 rounded-full text-xl" onclick="alert('Хоп! Оплата прошла (наверное)')">ӘЙДА!</button>
+
+            </div>
+
+            <div class="glass p-12 flex flex-col justify-between min-h-[550px]">
+
+                <h4 class="text-2xl font-black uppercase italic">VIP ТАТAR</h4>
+
+                <p class="opacity-50 text-sm italic">Личное наставничество Хана.</p>
+
+                <div class="text-5xl font-black gold-text my-8 italic">ХАН</div>
+
+                <button class="btn-alga py-5 rounded-full text-sm" onclick="alert('Бабай перезвонит')">ОБСУДИТЬ</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="py-32 px-6 max-w-4xl mx-auto">
+
+        <h2 class="giant-text text-4xl mb-16 italic underline decoration-yellow-500">FAQ</h2>
+
+        <div class="space-y-12">
+
+            <div>
+
+                <h5 class="font-black uppercase gold-text mb-2">«А если у меня нет татарских корней?»</h5>
+
+                <p class="opacity-70">После нашего курса они вырастут сами. Это генетический апгрейд, инде!</p>
+
+            </div>
+
+            <div>
+
+                <h5 class="font-black uppercase gold-text mb-2">«Это законно?»</h5>
+
+                <p class="opacity-70">Всё, что ведет АЛГА, законно. У нас есть печать от Нейро-Бабая.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="py-20 text-center border-t border-white/10 relative h-[400px] overflow-hidden">
+
+<div id="horse" class="text-8xl absolute left-1/2 -translate-x-1/2 top-10 cursor-pointer select-none transition-all duration-300">🐎</div>
+
+        <div class="mt-48">
+
+            <h3 class="giant-text text-4xl md:text-8xl opacity-10 hover:opacity-100 transition duration-700">АЛГА ИНДЕ</h3>
+
+            <p class="text-[10px] uppercase tracking-[0.5em] opacity-30 mt-8">
+
+                Осторожно! После курса возможна неконтролируемая тяга к перемячам.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+
+        // Интерактивная лошадка
+
+        const horse = document.getElementById('horse');
+
+        horse.addEventListener('mouseover', () => {
+            const x = Math.random() * (window.innerWidth - 100);
+
+            const y = Math.random() * 300;
+
+            horse.style.left = x + 'px';
+
+            horse.style.top = y + 'px';
+
+        });
+
+        horse.addEventListener('click', () => {
+            alert('Не догонишь! Татары всегда в движении!');
+
+        });
+
+    </script>
+
+</body>
+
+</html>
